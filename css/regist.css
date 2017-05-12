@@ -1,0 +1,193 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+}
+
+.headcon {
+  width: 1000px;
+  height: 68px;
+  margin: 30px auto 20px;
+}
+
+.headcon .hc_logo {
+  float: left;
+  width: 74px;
+  height: 68px;
+}
+
+.headcon .hc_right {
+  float: right;
+  margin-top: 20px;
+  width: 472px;
+}
+
+/*注册部分*/
+.regist_box {
+  width: 980px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.regist_box .login_pic {
+  width: 600px;
+  float: left;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.regist_r {
+  float: left;
+  width: 367px;
+  height: 600px;
+  background: url(../imgs/login_icon_list.png) 0 -115px no-repeat;
+}
+
+.regist_r form {
+  width: 301px;
+  height: 434px;
+  margin-left: 33px;
+  float: left;
+  margin-top: 0;
+}
+
+.regist_t {
+  float: left;
+  height: 87px;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 33px;
+}
+
+.regist_t h2 {
+  color: #c41f3a;
+  font-size: 22px;
+  height: 38px;
+  line-height: 38px;
+  font-weight: bold;
+  float: left;
+}
+
+.regist_t .re_top {
+  height: 38px;
+  line-height: 28px;
+  width: 96px;
+  float: right;
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.regist_t .re_top a {
+  color: #c41f3a;
+  text-decoration: none;
+}
+
+.item {
+  width: 301px;
+  height: 64px;
+}
+
+.phnum, .txt {
+  color: #333333;
+  border: 1px solid #c8c8c8;
+  height: 25px;
+  line-height: 25px;
+  padding: 6px 0 6px 6px;
+  width: 293px;
+  float: left;
+  font-size: 12px;
+}
+
+input:focus {
+  box-shadow: 0 0 3px #00f;
+}
+
+.err_box {
+  height: 23px;
+  line-height: 23px;
+  margin-bottom: 3px;
+  color: #8c8c8c;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  float: left;
+  font-size: 12px;
+}
+
+.verify {
+  width: 157px;
+  float: left;
+}
+
+.item4 .verf {
+  width: 78px;
+  height: 38px;
+  float: left;
+  margin-left: 5px;
+  line-height: 38px;
+}
+
+.item4 .change_v {
+  color: #c41f3a;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "宋体";
+  float: left;
+  width: 45px;
+  line-height: 25px;
+  height: 25px;
+  padding: 6px 0;
+}
+
+.item4 .change_v:hover {
+  cursor: pointer;
+}
+
+.regist_now {
+  text-align: center;
+  display: block;
+  border: none;
+  width: 301px;
+  height: 40px;
+  line-height: 45px;
+  background-color: #94193f;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-family: "宋体";
+  font-weight: bold;
+}
+
+.item5 {
+  height: 23px;
+  line-height: 23px;
+}
+
+.item5 span {
+  color: #94193f;
+}
+
+.footer {
+  width: 100%;
+  height: 175px;
+}
+
+.footer p {
+  padding-top: 10px;
+  text-align: center;
+  font-family: "宋体";
+  color: #7e7e7e;
+  line-height: 25px;
+}
+
+.footer p span {
+  font-family: Arial;
+  color: #666666;
+}
+
+.footer .font_img {
+  margin: 0 auto;
+  height: 113px;
+  text-align: center;
+  padding-top: 30px;
+}

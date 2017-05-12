@@ -1,0 +1,214 @@
+
+.header_top {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    line-height: 36px;
+    color: #8c8c8c;
+    background-color: #fafafa;
+  a:hover { text-decoration: underline; color: #c41f3a;cursor:pointer;  }
+    .w1000{width:1000px;height:36px;margin:0 auto;}
+}
+
+.ht_l{ 
+    a,span{ font-family: "宋体"; display: inline-block;  vertical-align: middle; color: #8c8c8c; }
+    .a_login { padding: 0 10px 0 20px; background:url(../imgs/line.png) no-repeat right center;}
+     .a_reg { padding-left: 8px; }
+    } 
+.ht_l{float:left;}
+.ht_r{float:right;}
+.list{
+    li { float: left; height: 36px; line-height: 36px; position: relative; z-index: 8;background:url(../imgs/line.png) no-repeat right center; }
+    li:nth-child(6){background:none;}
+}
+.ht_r{
+        a { font-family: "宋体"; padding: 0 10px; line-height: 36px; display: inline-block; *display: inline; *zoom: 1; vertical-align: middle; color: #8c8c8c; 
+       
+    }
+
+    .tel_icon { background: url(../imgs/icon_list.png) no-repeat 0 -38px; width: 14px; height: 13px; margin: 0 4px 0 10px; display: inline-block; vertical-align: middle; }
+    .sp_tel { padding-right: 10px;}
+    a.a_shop_enter{position: absolute;top: 0;left: 0;padding-top: 12px;height: 24px;border: 1px solid #fafafa;}
+}
+.down_app{ position: absolute; top: 36px; left: -10px; z-index: 15;  background-color: #fff;border-top:1px solid #dfdfdf; }
+.down_load_border{ border: 1px solid #f6f6f6; box-shadow: 0 0 1px #f6f6f6; padding: 5px;margin-top:5px;}
+.icon_top{ position: absolute; top: -2px; width: 12px; height: 8px; background: url(../imgs/icon_list.png) no-repeat -234px -592px;left:50%;margin-left:-6px; }
+.down_app {
+        p{ height:1.2em; line-height: 1.2em; text-align: center;color:#3b3b3b; }
+      }
+
+
+/*商家入驻*/
+$baseBorder:1px solid #ccc;
+.shop_enter_box{
+         position: relative;width: 110px;z-index: 10;
+         .shop_enter{display: none;position: absolute;top: 35px;left: 0px;border-left:$baseBorder;border-right:$baseBorder;border-bottom:$baseBorder;}
+}
+
+.shop_enter_box{
+             &:hover{background-color: #fff;}
+             &:hover .a_shop_enter{width: 140px;background: #fff;border:$baseBorder;z-index: 10;}
+             &:hover .shop_enter{display: block;width: 160px;background:#fff;z-index: 20;}
+             .se_icon1{background: url(../imgs/icon_list.png) -38px -763px no-repeat;text-align: center; font-family: "宋体";color: #fff;padding:0;display: inline-block;*display: inline;*zoom: 1;width: 80px;height: 18px;line-height: 16px;padding-left: 4px;}
+             .a_shop_enter {
+            img{vertical-align: top;}
+           }
+         }
+
+
+.a_shop_enter .b_down{vertical-align: top;margin-top: 3px;}
+.b_down{ background: url("../imgs/icon_list.png")  no-repeat -157px -696px; height: 6px; width: 10px; margin-left: 5px; display: inline-block; *display: inline; *zoom: 1; }
+.down_app{ display:none;
+        position:absolute;top:36px;left:-10px;z-index:15px;background:#fff;border-top:1px solid #dfdfdf;
+        p{height:12px;line-height:12px;text-align:center;color:#3b3b3b;
+       }
+        .down_load{border: 1px solid #f6f6f6; box-shadow: 0 0 1px #f6f6f6; padding: 5px;margin-top:5px;}
+    .icon_top { position: absolute; top: -2px; width: 12px; height: 8px; background: url(../imgs/icon_list.png) no-repeat -234px -592px;left:50%;margin-left:-6px; }
+   
+ }
+ .app{&:hover .down_app{display:block;}}
+/*客服中心*/
+ .ht_r .cus_box{position: relative; border-left: 1px solid #fafafa;border-right: 1px solid #fafafa;margin-left: 5px;
+     &:hover{background-color:#fff;border: $baseBorder;border-top: none;}
+     &:hover .cus_center{display:block;}
+   }
+.cus_center{ 
+    display:none;position: absolute; top: 35px; left:-1px; z-index: 5; border: $baseBorder;  
+    border-top: none; width: 100%;background-color: #fff; text-align: left;
+    a{ height: 25px; line-height: 25px;}
+  }
+/*logo及搜索框*/
+b{background: url(../imgs/icon_list.png) no-repeat;}
+.header_center{
+   background:#fff;
+    width:100%;
+    .center_con{width:1000px;margin:30px auto 0;
+    .h_logo{float: left;
+         width: 58px;
+         margin-right: 7px;}
+    }
+    .h_logo img{width:58px;}
+    .h_pic{float:left;margin-top:15px;margin-right:10px;}
+    .h_search{float:left; height:75px;
+       .search_list{display:none;}
+       .search_key{width:350px;height:25px;line-height:25px;margin-top:4px;overflow:hidden;}
+    }
+    .key_list{
+       li{float:left;line-height:25px;}
+       li a{padding-right:5px;
+        color: #8c8c8c;
+        font-family: "宋体";}
+        a:hover{color: #c41f3a;}
+       }
+    .h_car{float:right;margin-top:5px;
+           position:relative;
+
+          .car_list{ position: absolute;
+                   display:none;
+                    right: 0;
+                    height:80px;
+                    width: 308px;top:39px;
+                    background-color: #fff;line-height:80px;text-align:center;box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                    border: 1px solid #e2e2e2;
+                    border-top:none;
+                    font-size:14px;
+                    }
+
+         &:hover{
+                .shopcar{background-color: #fff;
+                       border-bottom:none;
+                       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                     border: 1px solid #e2e2e2;
+                     
+                   }
+                  .car_list{display:block;}
+                }
+         .shopcar{width:110px;display: block;
+                    border: 1px solid #d8d8d8;
+                    height: 39px;
+                    text-align: center;
+                    line-height: 39px;
+                    background-color: #f9f9f9;
+                    position: relative;
+                    cursor: pointer;
+                     .b_car1{float: left;
+                            display: block;
+                            background-position:-184px -736px;
+                            width: 21px;
+                            height: 15px;
+                            margin-top: 12px;
+                            margin-left:5px;}
+                    .b_car2{float:right;
+                       display:block;background-position: -270px -737px;
+                        height: 11px;
+                        margin-top: 14px;
+                        width: 13px;
+                       }
+                    .b_num{width:16px;height:16px;position:absolute;
+                    top:-5px;right:20px;
+                    border-radius:50%;background:#94193f;color:#fff;text-align:center;line-height:16px;font-weight:normal;}
+              }
+
+     }
+    
+}
+
+.search_input{width:355px;height:35px;
+         margin-top:5px;border: 3px solid #94193f;
+   .in_search{border:none;float:left;
+       height:19px;padding:8px 0;font-size:12px;text-indent:8px;width:305px;}
+   .btn_search{width:50px;cursor: pointer;
+    background-color: #94193f;
+    border: none;
+    color: #fff;
+    float: left;
+    height: 35px;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+    line-height: 33px;}
+}
+/*导航栏*/
+.header_nav{   
+    border-bottom: 2px solid #94193f;
+    height: 39px;
+    line-height: 39px;
+    .hn_center{
+         width:1000px;margin:30px auto 0;
+         height:39px;
+        .nav_list{float:left;
+               a{font-size:16px;color:#303030;
+               &:hover{color:#94193f;}
+               }
+
+              .all_type{width:215px;
+                     text-align:center;background:#94193f;padding:0;
+                     a{color:#fff;}
+                   }
+             .home{padding-left:60px;
+                 a{color:#94193f;font-weight:900;}
+               }
+          }
+        .nav_list li{float: left;
+                padding: 0 30px;
+                position: relative;
+                height: 39px;
+                line-height: 39px;
+                z-index: 5;}
+    
+      }
+}
+.all_type{
+    .b_type{
+          width:16px;height:8px;display:block;float:right;margin:20px 16px 0 0;
+        background-position: -36px -128px;}   
+}
+.nav_list .live{
+     position:relative;
+    .l_hot{
+      width:30px;height:18px;
+       position:absolute;
+       top:0;right:-3px;
+    }
+}
+
+
+

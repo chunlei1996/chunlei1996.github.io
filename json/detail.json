@@ -1,0 +1,39 @@
+{
+	"goods_id": 10001,
+	"goods_name": "自由森林女士轻薄休闲外套超值组皮肤衣防晒衣 套组",
+	"goods_price": 248.00,
+	"goods_pic_small": "../imgs/gpic1_small.jpg",
+	"goods_pic_large": "../imgs/gpic1_large.jpg",
+	"size": {
+		"1000101": {
+			"id": "1000101",
+			"type": "S",
+			"sale_price": "298.00",
+			"stock": 200
+		},
+		"1000102": {
+			"id": "1000102",
+			"type": "M",
+			"sale_price": "298.00",
+			"stock": 94
+		},
+		"1000103": {
+			"id": "1000103",
+			"type": "L",
+			"sale_price": "328.00",
+			"stock": 307
+		},
+		"1000104": {
+			"id": "1000104",
+			"type": "XL",
+			"sale_price": "318.00",
+			"stock": 89
+		},
+		"1000105": {
+			"id": "1000105",
+			"type": "XXL",
+			"sale_price": "288.00",
+			"stock": 399
+		}
+	}
+}

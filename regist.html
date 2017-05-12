@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/regist.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+</head>
+<body>
+<!-- 头部 -->
+    <div class="header clearfix">
+    	<div class="headcon">
+    		<div class="hc_logo"><a href="###"><img src="imgs/logo.jpg"/></a></div>
+    		<div class="hc_right"><img src="imgs/top_center.jpg"/></div>
+    	</div>
+    </div>
+
+<!-- 注册部分 -->
+<div class="regist_box">
+	<div class="login_pic">
+		<img src="imgs/new_regist.jpg"/>
+	</div>
+	<div class="regist_r">
+		
+			<div class="regist_t">
+			    <h2>用户注册</h2>
+			    <div class="re_top">
+			      已有账号<a  href="login.html">在此登录</a>
+			    </div>
+			</div>
+
+		<form>
+		   <div class="item item0">
+                 <input type="text" placeholder="请输入用户名" class="username txt"  name="account">
+                <div class="err_box err0"> 
+                 请输入5-15位用户名（字母数字下划线）
+               </div>
+            </div>
+			<div class="item item1">
+                 <input type="text" placeholder="请输入手机号码" class="phnum txt" name="phone">
+                <div class="err_box err1"> 
+                 请输入十一位手机号码 
+               </div>
+            </div>
+            <div class="item item2">
+            	<input type="password" placeholder="请输入密码" class="psw txt" name="password" >
+                <div class="err_box err2">
+                    请输入您的密码，密码为6-16位
+                </div>
+            </div>
+            <div class="item item3">
+            	<input type="password" placeholder="请再次输入密码" class="repsw txt" name="passw">
+                <div class="err_box err3">
+                    请输入您的密码，密码为6-16位
+                </div>
+            </div>
+            <div class="item item4">
+            	<input type="text" placeholder="验证码" class="verify txt" name="verify" >
+            	<div class="verf">0123</div> 
+            	<div class="change_v">换一换</div>
+                <div class="err_box err4"> 请输入右侧验证码 </div>
+            </div>
+            <div class="item item5">
+            	<button type="button" class="regist_now">立即注册</button>
+                <div class="tip">
+                    <input type="checkbox"/>
+                    <a>注册即表示同意快乐购<span>《用户服务协议》</span>条款</a>
+                </div>
+            </div>
+		
+	</form>
+</div>
+<div class="footer">
+	<p><span>Copyright&copy; 2006-2016 happigo. All Rights Reserved </span> 免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800 <span>E-Mail: service@happigo.com</span>
+      </p>
+      <p>湘ICP备12000157号 信息网络传播视听节目许可证号：1810530</p>
+      <div class="font_img"><img src="imgs/foot_img3.png"/><img src="imgs/foot_img4.png"/></div> 
+</div>
+<script data-main="js/js/regist.js" src="require.js" defer async="true"></script>
+</body>
+</html>

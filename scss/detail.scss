@@ -1,0 +1,166 @@
+/*商品详情部分*/
+.container{width:100%;height:auto;}
+.goods-detail{width:1000px;margin:0 auto;}
+.con_top{width:1000px;height:57px;line-height:57px;
+  p{ a{color: #333333;
+       font-size: 14px;}
+    }
+}
+.left{
+	float:left;
+	width:382px;height:524px;
+ }
+
+.glass-main {
+	position: relative;
+	width: 380px;
+	height: 380px;
+	border: 1px solid #ccc;
+	 .middle {
+	   img{width:380px;height:380px;}
+	position: relative;
+	height: 100%;
+    }
+    .filter {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 198px;
+	height: 198px;
+	border: 1px solid #ccc;
+	background-color: rgba(0,0,0,.4);
+   }
+   .large {
+	display: none;
+	z-index:20;
+	overflow: hidden;
+	position: absolute;
+	top: -1px;
+	left: 380px;
+	width: 380px;
+	height: 380px;
+	border: 1px solid #ccc;
+	  img {
+	position: absolute;
+	width: 700px;
+	height: 700px;
+      }
+  }
+
+}
+.glass-slide {
+	position: relative;
+	margin-top: 20px;
+	height: 60px;
+	.arrow {
+	&:hover{cursor:pointer;}
+	position: absolute;
+	top:15px;
+	width: 14px;
+	height: 25px;
+	background: url(../imgs/detail_icon_list.png) no-repeat;
+    }
+	.arrow-left {
+	left: 0;
+	background-position: 0 -373px;
+    }
+    .arrow-right {
+	right: 0;
+	background-position: -20px -373px;
+   }
+    .slide-main {
+	overflow: hidden;
+	position: absolute;
+	left: 15px;
+	top: 0;
+	width: 360px;
+	height: 60px;
+	.img-wrap {
+		width: 600px;
+		     img {
+		float: left;
+		width: 58px;
+		height: 58px;
+		margin-right: 12px;
+		border: 1px solid #fff;
+	          }
+
+        }
+   }
+}
+
+.glass-slide .slide-main img.active {
+	border-color: red;
+}
+.right{width:580px;float:right;height:560px;
+  h1{color: #303030;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+    padding-top: 10px;
+    overflow: hidden;}
+    h2{font-size: 14px;
+    color: #c41f3a;
+    font-weight: normal;
+    margin-top: 15px;
+    line-height: 20px;
+    overflow: hidden;}
+    .price{width: 100%;background-color: #fefafb;height:74px;margin-top: 10px;
+    border-bottom: 1px dashed #f0dde1;
+    padding-bottom: 10px;}
+    span{display:block;float: left;}
+    .title{color: #666;font-size: 14px;width: 55px;
+    padding-left: 10px;margin-top:30px;}
+    .price_sign{color: #c41f3a;width:10px;
+          font-size: 18px;margin-top:30px;
+    }
+   .goods_price{font-family: arial;width:150px;margin-top:5px;padding-left:10px;
+    font-size: 42px;
+    color: #c41f3a;}
+    .price_before{margin-top:30px;color: #999;
+    font-size: 14px;
+    text-decoration:line-through;
+    }
+    .goods_title{
+       dl{idth: 100%;
+         overflow: hidden;
+         margin-bottom: 5px;
+         }
+       dt{background: url("../imgs/detail_icon_list.png") repeat 0 0;
+		    color: #fff;
+		    float: left;
+		    height: 19px;
+		    margin-right: 8px;
+		    text-align: center;
+		    width: 42px;
+		 }
+	   dd{float: left;color: #94193f;font-size: 14px;width: 500px;}
+	  .pop{padding: 12px 0;overflow: hidden;border-bottom: 1px dotted #dcdcdc;
+	       span{padding-left:10px;font-size:14px;color: #666;}
+	     }
+    }
+    .goods_size{
+       .goods_item{width:580px;height:50px;float:left;}
+       width:100%;line-height:33px;padding-left:10px;
+       .pop_tit{color: #666;float: left;font-size: 14px;height:32px;line-height:32px;margin-top:5px;}
+       ul,.amount_item{width:480px;float:left;height:40px;}
+       .select_list{float:left;padding:0 15px;border:1px solid #c41f3a;margin:5px 0 0 10px;height:32px;line-height:32px;font-size:14px;}
+       .size li{border:1px solid #c8c8c8; }
+       li.active{border:1px solid #c41f3a;}
+       .amount_item{margin:0 10px;
+           a{border: 1px solid #c8c8c8; float: left;height: 32px;width: 32px; display: inline-block;color: #999999; font-weight: bold;font-size: 20px; text-align: center; line-height: 30px;
+            &:hover{cursor:pointer;}
+           }
+           .text{border-top: 1px solid #c8c8c8;border-bottom: 1px solid #c8c8c8;float: left;border-left:0;border-right:0;height: 32px;text-align: center; width: 60px;line-height: 23px;display: inline-block;}
+           span{margin-left:10px;}
+           i{font-style:normal;}
+        }
+        .btn{margin-left: 17px; float: left; width: 136px;height: 36px; border: 2px solid #a82045;color: #b51748;text-align: center;line-height: 36px; font-size: 16px;
+          &:hover{cursor:pointer;}
+        }
+        .buynow{color:#fff;background:#a82045;}
+     }
+
+
+}
