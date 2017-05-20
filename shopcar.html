@@ -53,7 +53,7 @@
    <div class="header_center">
     <div class="center_con clearfix">
         <div class="h_logo">
-            <a href="index.html"><img src="imgs/logo.jpg"></a>
+            <a href="###"><img src="imgs/logo.jpg"></a>
         </div>
        
         <div class="h_pic">
@@ -113,7 +113,7 @@
 <div class="container">
    <div class="cart">
        
-        <div class="cart-main">
+        <div class="cart-main">          
           <div class="cart-main-title">
             <ul class="clearfix">
               <li class="td td-checkbox">
@@ -130,10 +130,12 @@
               <li class="td td-option">操作</li>
             </ul>
           </div>
+          <!--商品区-->
           <div class="cart-main-content">
             
 
           </div>
+          <!--操作区-->
           <div class="cart-option clearfix">
             <div class="options clearfix">
               <div class="options-item select-all">
@@ -158,6 +160,7 @@
       </div>
 </div>
     <script type="text/html" id="cart-list">
+			<!-- cart  data -->
 			{{each cart as v k}}
 				<ul class="cart-goods-item clearfix" data-id="{{k}}">
 					<li class="td td-checkbox">

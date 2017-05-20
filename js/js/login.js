@@ -64,10 +64,9 @@ require(['../config'],function(){
 					}else{
 						alert('登录失败');
 					}
-				}
-			});
-		});
-
+			    }
+		  });
+         });
 	});
-
+  
 });

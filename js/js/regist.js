@@ -54,6 +54,7 @@ require(['../config'],function(){
 				return;
 			}
 
+
 			//判断用户名是否已被注册
 			$.ajax({
 				url: 'http://10.9.151.199/PC-Project-Admin/checkAccount.php',
@@ -142,11 +143,13 @@ require(['../config'],function(){
 				if(!regStatus[i]){
 					alert('部分数据不合法');
 					return;
+				}else{
+					alert('注册成功');
 				}
 			}
-
+                  
 			//通过ajax提交表单数据
-			$.ajax({
+		/*	$.ajax({
 				type: 'post',
 				url: 'http://10.9.151.199/PC-Project-Admin/register.php',
 				data: {
@@ -161,7 +164,7 @@ require(['../config'],function(){
 						alert('注册失败');
 					}
 				}
-			});
+			});*/
 		});
 
 

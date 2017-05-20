@@ -3,22 +3,9 @@
   background-color: #fff;
 }
 
-.container .top-nav {
-  width: 100%;
-  margin: 0 auto;
-  height: 32px;
-  text-align: center;
-  background-color: #f4f4f4;
-}
-
 .cart {
   width: 1000px;
   margin: 0 auto;
-}
-
-.cart .cart-top img {
-  width: 1000px;
-  height: 131px;
 }
 
 /*cart-main*/
