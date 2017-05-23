@@ -2,7 +2,8 @@ require(['../config'],function(){
 
 	//加载需要用到的模块
 	require(['jquery',"template","jquery.cookie"],function($,template,jc){
-
+        $('.append_head').load('../../common.html .header');
+        $('.append_foot').load('../../common.html .footer');
 		/*放大镜部分*/
 		    var leftbox = $('.left');
 			var midWrap = $('.middle');
@@ -17,14 +18,13 @@ require(['../config'],function(){
 
 			//鼠标在中型盒子上移动
 			midWrap.mousemove(function(e){
-				e = e || window.event;
 				//滤镜的位置
 				var l = e.pageX - ol - 100;
 				var t = e.pageY - ot - 100;
 		           		//边界处理
 				l = l < 0 ? 0 : (l > 180? 180 : l);
 				t = t < 0 ? 0 : (t > 180? 180 : t);
-
+                console.log(l,t);
 				//更改滤镜位置
 			filter.css({
 			            "left":l,
