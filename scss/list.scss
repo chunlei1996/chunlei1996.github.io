@@ -1,0 +1,74 @@
+
+.header_center .search_input .btn_search{margin:0;width:40px;}
+/*内容部分*/
+.list_title{height: 57px;
+	    line-height: 57px;
+	    overflow: hidden;
+	    border-bottom: 1px solid #ccc;
+	    margin-bottom: 20px;
+	    a{color: #666666;
+	    font-size: 14px;
+	    padding: 0 8px;}
+}
+.list_box{
+	.lb_title{background-color: #fbfbfb;
+	        border: 1px solid #e4e4e4;
+	        height: 40px;
+	        line-height: 40px;
+	        .sort{float: left;
+			    padding-right: 0px;
+			    text-align: center;
+			    width: 86px;
+			    color: #94193f;
+			    border-right: 1px solid #e4e4e4;
+			    margin-right: 10px;
+			    background-color: #fff;
+			    }
+			    .sort_list{float: left;
+                          padding-left: 20px;
+                          li{float: left;
+	                           text-align: center;
+	                           padding-right: 30px;
+	                           a{color: #999;}
+	                           .checkit{width:15px;height:15px;margin-top:15px;vertical-align: middle;}
+	                           label{padding-left: 4px;
+                                    display: inline-block;
+	                                vertical-align: middle;
+	                                color: #94193f;}
+	                           }
+                          }	 
+                .goods_count{float:right;padding-right:10px;
+                            .goods_num{float:left;padding-right:10px;
+                                       .num{color: #94193f;}
+                                      }
+                             .goods_page{float:left;padding-left:10px;
+                                          .page1{color: #94193f;}
+                                        }
+                           
+                            }
+	        }
+
+    .goods_list{margin-top:20px;width:100%;overflow:hidden;
+               .add_goods{float:left;margin-left:30px;overflow:hidden;
+                li{border: 1px solid #e4e4e4;
+                   &:hover{border:1px solid #fff;}
+	              float: left;
+	              margin: 5px 9px 18px 0px;
+	              padding: 0 0 15px;
+	             width: 291px;
+	             height: 360px;
+	             position: relative;
+	             img{width:100%;}
+	              p{width:100%;margin-left:10px;overflow:hidden;}
+	              .p1{margin-top:5px;
+	                 .sp1{font-size:20px;color: #94193f;}
+	                 .sp2{font-size:14px;color:#969696;display:inline-block;padding-left:10px;text-decoration:line-through;}
+	                 }
+	             }
+	             .p2{font-size:14px;line-height:24px;color:#434343;}	             
+
+	            }
+          }
+        .M-box4{width:500px;margin:0 auto;}
+    
+}

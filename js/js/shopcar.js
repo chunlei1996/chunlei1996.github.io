@@ -5,8 +5,9 @@ require(['../config'],function(){
          layer.config({
              path:"js/plug/layer/"
           });
-       
-		  var cart={
+      $('.append_head').load('../../common.html .header');
+          $('.append_foot').load('../../common.html .footer');
+	  var cart={
       	   cart:{},
       	   data:{},
       	   cartMain:$('.cart-main-content'),
@@ -27,18 +28,18 @@ require(['../config'],function(){
              });
 
 			//更改数量
-			this.increase();
-			this.decrease();
-			this.input();
+      			this.increase();
+      			this.decrease();
+      			this.input();
 
-			//删除操作
-			this.delete();
-			this.deleteSelect();
+      			//删除操作
+      			this.delete();
+      			this.deleteSelect();
 
-			//选中
-			this.select();
-			//全选
-			this.selectAll();
+      			//选中
+      			this.select();
+      			//全选
+      			this.selectAll();
            },
            //点击加号商品数量增加
            increase:function(){
@@ -74,9 +75,9 @@ require(['../config'],function(){
                   	 amount=stock;
                   }
                   if(amount === '') return;
-				  if( isNaN(amount) ){
-						amount = 1;
-					}
+        				  if( isNaN(amount) ){
+        						     amount = 1;
+        					  }
                    _this.handleMoney($(this),amount);
            	 });
            },

@@ -6,7 +6,7 @@
 require(['../config'],function(){
 
 	//加载需要用到的模块
-	require(['jquery'],function($){
+	require(['jquery','jquery.cookie'],function($,jc){
 
 		//注册处理
 
@@ -52,11 +52,11 @@ require(['../config'],function(){
 				err0.css({"color":"#c41f3a"});                                                                     
 				regStatus.uname = false;
 				return;
-			}
+			}else{err0.html('用户名可用');}
 
 
 			//判断用户名是否已被注册
-			$.ajax({
+	/*		$.ajax({
 				url: 'http://10.9.151.199/PC-Project-Admin/checkAccount.php',
 				data: {
 					account: uname
@@ -71,7 +71,7 @@ require(['../config'],function(){
 					}
 				}
 			});
-
+     */
 		});
 		//手机号验证
         var regPhone = /^1[3578]\d{9}$/; 
@@ -127,14 +127,17 @@ require(['../config'],function(){
            var v=inverify.val();
            var reg=new RegExp(verify,'i');
            var r=reg.test(v);
-           if(v==''||!r){err4.html('验证失败');}
+           if(v==''||!r){
+           	    err4.html('验证失败!');
+           	    err4.css({"color":"#c41f3a"});
+            }
            else if(r){
                    err4.html('验证成功');
                }
            
 
       });
-		//点击登录
+		//点击注册
 		regBtn.click(function(){
 
 			//判断所有的信息状态，如果有不合法的，不能注册
@@ -145,6 +148,8 @@ require(['../config'],function(){
 					return;
 				}else{
 					alert('注册成功');
+					$.cookie('username',unameInput.val(),{expires: 365,path: '/'});
+                    console.log( $.cookie('username'));
 				}
 			}
                   

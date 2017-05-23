@@ -4,7 +4,7 @@
 
 require(['config'],function(){
 	require(['jquery',"template","banner","jquery.cookie","search"],function($,tem,banner,jc,search){
-		
+		var res;
         //注册小提示
         $('.reg_close').click(function(){
         	$(this).parent().hide();
@@ -110,25 +110,29 @@ require(['config'],function(){
         /*限时抢购部分*/
         var xianshi={
 	           f1_list:$('.f1_list'),
+	           timer:null,
 	           init:function(){
 	           	   this.getajax2();
 	           	   this.handleSlide();
+	           	   this.handleTime();
 	           },
 		        getajax2:function(){
 		        	var _this=this;
+		        	
+		        	//console.log("调用时间："+_this.handleTime())
 		        	$.ajax({
 			           type:"get",
 			       	   url: '../json/today_live.json',
 			       	   dataType:'json',
 			       	   success:function(data){
-			              console.log(data);
+			              //console.log(data);
 	                      for(var z=0;z<4;z++){
 				               	var con=''; 
 				               	for (var k = 0; k < data[0].length; k++) {
 				                 	 con +=`
 						                   <li>
 								              <div class="f1_pic"><a href="javascript:;"><img src="${data[z][k].pic}"/></a></div>
-								              <div class="f1_time">已结束</div>
+								              <div class="f1_time">距结束<span class="endTime"></span></div>
 								              <div class="f1_intr">
 								                <p class="lp1"><a href="###">${data[z][k].title}</a></p>
 								                <p class="lp2"><a href="###">${data[z][k].detail}</a></p>
@@ -147,7 +151,6 @@ require(['config'],function(){
 	                var _this=this;
 		           $('.xs_type li').mouseenter(function(){
 		           	  $(this).addClass('active').siblings().removeClass('active');
-
 		           	   _this.f1_list.eq($(this).index()).show().siblings().hide();
 		           });
 		           var index=0;
@@ -157,9 +160,7 @@ require(['config'],function(){
 		           $('.xs_floor').mouseleave(function(){
 		           	  $(this).find('.arrow').hide();  
 			        });
-		           
-		          
-			         $('.xs_floor .ar').click(function(){
+			       $('.xs_floor .ar').click(function(){
 			          	 index++;
 			          	 if(index > 2){
 					         index = 2;
@@ -167,8 +168,7 @@ require(['config'],function(){
 		                   }
 			          	 _this.f1_list.animate({'margin-left':-1010*index});
 		             });
-
-		              $('.xs_floor .al').click(function(){
+		            $('.xs_floor .al').click(function(){
 		           	  	  index--;
 			          	 if(index < 0){
 					         index = 0;
@@ -177,10 +177,38 @@ require(['config'],function(){
 			          	 _this.f1_list.animate({'margin-left':-1010*index});
 		           	  });
 		           
-		        }          
+		        },
+		        catTime:function(){
+                   var now=new Date();
+                   var end=new Date('2017/6/5 00:00:00');
+                   var num=end-now;
+                   var day=parseInt(num/1000/60/60/24);
+                   var h=parseInt(num/1000/60/60%24);
+                   var m=parseInt(num/1000/60%60);
+                   var s=parseInt(num/1000%60);
+                   h=h<10?'0'+h:h;
+                   m=m<10?'0'+m:m;
+                   s=s<10?'0'+s:s;
+                   var time=day+'天'+h+':'+m+':'+s;
+                   return time;
+		        },
+		        handleTime:function(){
+		        	var that=this;
+		        	this.timer=setInterval(function(){
+			             that.catTime();
+			            var res= that.catTime();
+			            $(".endTime").html(res);
+			            console.log(res);
+			             //console.log(that.catTime());
+			         
+			         },1000);
+		          
+		        }       
         };
         xianshi.init();
+
       /*限时抢购结束*/ 
+    
        
       /*新品推荐*/                                                                                           
        var changeGoods = {
@@ -278,9 +306,9 @@ require(['config'],function(){
 					       		 }
 					       	}
 					 });
-	          		},
+	          	},
 	            
-	                 handleSwitch:function(){
+	             handleSwitch:function(){
 	                 	 $('.common_ul').each(function(){
 		                  	 var commonList = $(this).parent().next().find('.common_list');
 			                 $(this).find('li').mouseenter(function(){
@@ -289,7 +317,7 @@ require(['config'],function(){
 					           	  $('.first_pic').show();
 			             	 });
 	                  });
-	                 }	                 
+	             }	                 
             };
          comFloor.init();
        /*楼层选项卡结束*/

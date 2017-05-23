@@ -130,8 +130,8 @@
 
 }
 .f1_con{
-  .f1_list{float:left;display:block;height:330px;}
-  width:1010px;float:left;margin-top:20px;height:330px;overflow:hidden;
+  .f1_list{float:left;display:block;height:320px;}
+  width:1010px;float:left;margin-top:20px;height:320px;overflow:hidden;
   li{width:192px;margin-right:10px;float:left;
     .f1_pic{width:192px;height:192px;position:relative;
        &:hover img{opacity:0.5;}
@@ -168,19 +168,8 @@
     .f2_list.active{display:block;}
   }
 
-/*商品公共样式li*/
-.common_l{width:186px;height:285px;float:left;margin-right:10px;
-background:#fff;
-border:3px solid #fff;
-p{padding-left:5px;oveflow:hidden;}
- &:hover{border: 3px solid #c4193f;
-    .lp1,.lp2{text-decoration:underline;}
- }
-  img{width:186px;}
-  .lp3{padding-top:0;}
-}
-.common_l:last-child{margin-right:0;}
-/*公共样式结束*/
+
+/*精选活动*/
 .f3_title{height:40px;line-height:40px;width:100%;border-bottom:1px solid #cfcfcf;}
 .f3_title  h2{border-bottom:3px solid #000;height:39px;}
 .f3_list{margin-top:20px;float:left;width:1000px;
@@ -207,8 +196,20 @@ p{padding-left:5px;oveflow:hidden;}
           }       
        }
     }
-/*个户美妆部分*/
-.gh_floor h2{float:left;}
+
+
+/*商品公共样式*/
+.common_l{width:186px;height:285px;float:left;margin-right:10px;
+background:#fff;
+border:3px solid #fff;
+p{padding-left:5px;oveflow:hidden;}
+ &:hover{border: 3px solid #c4193f;
+    .lp1,.lp2{text-decoration:underline;}
+ }
+  img{width:186px;}
+  .lp3{padding-top:0;}
+}
+.common_l:last-child{margin-right:0;}
 
 .common_ul{ float: right;height: 37px;line-height: 37px; margin-top: 7px;
         li{height:37px;float:left;border: 2px solid #fbfbfb;border-bottom:none;
@@ -235,8 +236,40 @@ p{padding-left:5px;oveflow:hidden;}
 .first_pic{width:584px;height:274px;float:left;margin-right:10px;
   img{width:100%;}
 }
+.common_brand{width: 996px;height: 111px;border: 1px solid #eaeaea;overflow: hidden;background-color: #fff; position: relative;
+    .brand_title{width: 96px;
+              text-align: left;
+              line-height: 111px;
+              display: block;
+              float: left;
+              color: #333333;
+              font-size: 16px;
+              padding-left: 30px;}
+    .brand_list{
+            float: left;
+            margin: 15px 0;
+            width: 860px;
+            height: 80px;
+            overflow: hidden;
+            position: relative;
 
-/*left_slide左边楼层选项卡*/
+       li{float: left;
+          padding: 0 19px;
+          position: relative;
+          height: 80px;
+          display: table;
+          width: 80px;
+          overflow: hidden;
+          a{display:table-cell;vertical-align:middle;}
+           img{width:100%;}
+            
+          }
+        }
+}
+
+/*公共样式结束*/
+
+/*左边楼层选项卡*/
 .left_slide{
   width:94px;height:440px;background:#fff;position:fixed;top:50%;margin-top:-220px;left:0;z-index:20;display:none;
 }
@@ -298,18 +331,67 @@ z-index:100;
         }
      }
      .slide_bottom{width:40px;float:left;height:180px;position:absolute;bottom:0;left:0;
-       .hap_bg{width:40px;height:40px;
+       .hap_bg{width:40px;height:40px;position:relative;
             a{width:40px;height:40px;display:block;padding-top:5px;}
             .a_icon{display: block;background-position:-170px 0;width: 20px;height: 20px;margin:10px;}
-       }
+            .left_icon{position: absolute;
+                     display:none;
+                    left:0;
+                   top:18px;
+                    height: 16px;
+                    width: 8px;
+                    z-index: 50;
+                    background: url(../imgs/icon_list.png) no-repeat -3px -585px;}
+             .hap_logo{position:absolute;left:-180px;top:-200px;display:none;}
+              &:hover{
+               .left_icon{display:block;}
+               .hap_logo{display:block;}
+               }
+          }
+
      }
-     .online{width:40px;height:40px;margin:20px 0;
+     .online{width:40px;height:40px;margin:20px 0;position:relative;
         a{width:40px;height:40px;display:block;padding-top:5px;
+           &:hover{.cur{display:block;}}
           .a_online{display: block;
             background-position: -170px -58px;
             width: 22px;
             height: 32px;
-            margin: 5px 3px 5px 8px;}
+            margin: 5px 3px 5px 8px;
+           }
+          .cur{
+             width: 240px;height:300px;display:none;
+             position:absolute;
+             right:40px;bottom:0;
+            color: #444851;
+            background-color: #fff;
+            overflow: hidden;
+            border: 1px solid #f2f2f2;
+            padding-bottom: 15px;
+              .cur_title{width: 100%;
+                  height: 32px;
+                  line-height: 32px;
+                  text-align: center;
+                  overflow: hidden;}
+            }
+            .cur_con{ackground-color: #fbfcfd;
+                    width: 100%;
+                    overflow: hidden;
+                    padding: 5px 0 8px 0;
+                span{display: block;
+                    width: 120px;
+                    text-align: center;
+                    float: left;
+                    height: 25px;
+                    line-height: 25px;
+                    color: #444851;
+                    &:hover{color: #94193f;
+                           text-decoration: underline;
+                           }
+                    }
+
+            }
+
         }
      }
      .back_top{position:absolute;bottom:0;left:0;width:40px;height:60px;
@@ -325,22 +407,6 @@ z-index:100;
         }
      }
 }
-/*回到顶部*/
-/*.back_top{width:19px;position:fixed;right:20px;bottom:0;padding:5px;
-background:#434343;
-&:hover{cursor:pointer;}
-  .top{font-size: 10px;
-    font-family: Arial;
-    color: #fff;
-    }
-    .return{
-    background: url(../imgs/icon_list.png) -83px -252px;
-    width: 19px;
-    height: 19px;    
-  }
-}
-.back_top:hover{background-color: #c4193f;}
-*/
 /*固定搜索框*/
 .searchfix{width:100%;height:52px;position:fixed;top:0;left:0;background:#94193f;z-index:50;display:none;
    .search_con{width:1000px;margin:0 auto;

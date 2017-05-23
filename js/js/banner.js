@@ -29,6 +29,7 @@ define(function(){
 			                   // console.log(_this);
 							}); 
 						},
+						//图片切换小圆点跟随
 						imgSwitch:function(){
 							       this.index++;
                                 if(this.index>=this.imgs.length){

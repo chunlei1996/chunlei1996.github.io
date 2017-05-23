@@ -1,0 +1,469 @@
+[
+
+                 {
+                 	    "id":"1001",
+                 	    "pic":"../imgs/sort_list1.jpg",
+                 	    "price1":"￥1980.00",
+                 	    "price2":"￥2800.00",
+                 	    "detail":"La Villosa冰川活细胞精华组(瑞士原装进口)"  
+                    },
+                     {
+                 	    "id":"1002",
+                 	    "pic":"../imgs/sort_list2.jpg",
+                 	    "price1":"￥1680.00",
+                 	    "price2":"￥2580.00",
+                 	    "detail":"REFA CARAT 铂金微电流滚轮美容仪 按摩V脸瘦脸"  
+                     },  
+                     {
+                 	    "id":"1003",
+                 	    "pic":"../imgs/sort_list3.jpg",
+                 	    "price1":"￥1580.00",
+                 	    "price2":"￥2020.00",
+                 	    "detail":"LaVillosa活细胞眼部精华组(瑞士原装进口)"  
+                     }, 
+                      {
+                 	    "id":"1004",
+                 	    "pic":"../imgs/sort_list4.jpg",
+                 	    "price1":"￥1480.00",
+                 	    "price2":"￥2820.00",
+                 	    "detail":"FOREO LUNA露娜标准版一代粉色（中性肌肤）"  
+                     },
+                     {
+                 	    "id":"1005",
+                 	    "pic":"../imgs/sort_list5.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1998.00",
+                 	    "detail":"whoo 后秘贴焕然新生精华系列礼盒五件套"  
+                     },
+                     {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list6.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"SK-II神仙水护肤精华露230ml"  
+                     }, 
+                      {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list7.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"DrSebagh赛贝格微整抗老精华奢华订制组（原装进口）"  
+                     },
+                      {
+                 	    "id":"1008",
+                 	    "pic":"../imgs/sort_list8.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"京城之霜 全新白皙臻亮安瓶组"  
+                     }, 
+                      {
+                 	    "id":"1009",
+                 	    "pic":"../imgs/sort_list9.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本丸上胶原蛋白精华线球奢享套组"  
+                     },
+                      {
+                 	    "id":"1010",
+                 	    "pic":"../imgs/sort_list10.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"诗蒂兰 涂抹式水光肌原液套组 原液10ml*6支*2盒"  
+                     },  
+                      {
+                 	    "id":"1011",
+                 	    "pic":"../imgs/sort_list11.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"FOREO斐珞尔 露娜mini一代硅胶美容仪电动洁面仪毛孔清洁器洗脸刷"  
+                     },
+                     {
+                 	    "id":"1012",
+                 	    "pic":"../imgs/sort_list12.jpg",
+                 	    "price1":"￥890.00",
+                 	    "price2":"￥1620.00",
+                 	    "detail":"法国Biotherm/碧欧泉男士细致3件套（细致洁面膏125ml+细致爽肤水20"  
+                     },  
+                      {
+                 	    "id":"1013",
+                 	    "pic":"../imgs/sort_list13.jpg",
+                 	    "price1":"￥880.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本ShuUemura植村秀琥珀臻萃洁颜油450ml 卸妆油 "  
+                     },
+                     {
+                 	    "id":"1014",
+                 	    "pic":"../imgs/sort_list14.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },  
+                      {
+                 	    "id":"1015",
+                 	    "pic":"../imgs/sort_list15.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },
+                      {
+                 	    "id":"1016",
+                 	    "pic":"../imgs/sort_list16.jpg",
+                 	    "price1":"￥890.00",
+                 	    "price2":"￥1620.00",
+                 	    "detail":"SK-II肌源修护精华霜 80g"  
+                     },
+                 {
+                 	    "id":"1001",
+                 	    "pic":"../imgs/sort_list1.jpg",
+                 	    "price1":"￥1980.00",
+                 	    "price2":"￥2800.00",
+                 	    "detail":"La Villosa冰川活细胞精华组(瑞士原装进口)"  
+                       },
+                     {
+                 	    "id":"1002",
+                 	    "pic":"../imgs/sort_list2.jpg",
+                 	    "price1":"￥1680.00",
+                 	    "price2":"￥2580.00",
+                 	    "detail":"REFA CARAT 铂金微电流滚轮美容仪 按摩V脸瘦脸"  
+                     },  
+                     {
+                 	    "id":"1003",
+                 	    "pic":"../imgs/sort_list3.jpg",
+                 	    "price1":"￥1580.00",
+                 	    "price2":"￥2020.00",
+                 	    "detail":"LaVillosa活细胞眼部精华组(瑞士原装进口)"  
+                     }, 
+                      {
+                 	    "id":"1004",
+                 	    "pic":"../imgs/sort_list4.jpg",
+                 	    "price1":"￥1480.00",
+                 	    "price2":"￥2820.00",
+                 	    "detail":"FOREO LUNA露娜标准版一代粉色（中性肌肤）"  
+                     },
+                     {
+                 	    "id":"1005",
+                 	    "pic":"../imgs/sort_list5.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1998.00",
+                 	    "detail":"whoo 后秘贴焕然新生精华系列礼盒五件套"  
+                     },
+                     {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list6.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"SK-II神仙水护肤精华露230ml"  
+                     }, 
+                      {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list7.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"DrSebagh赛贝格微整抗老精华奢华订制组（原装进口）"  
+                     },
+                     {
+                 	    "id":"1008",
+                 	    "pic":"../imgs/sort_list8.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"京城之霜 全新白皙臻亮安瓶组"  
+                     }, 
+                      {
+                 	    "id":"1009",
+                 	    "pic":"../imgs/sort_list9.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本丸上胶原蛋白精华线球奢享套组"  
+                     },
+                      {
+                 	    "id":"1010",
+                 	    "pic":"../imgs/sort_list10.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"诗蒂兰 涂抹式水光肌原液套组 原液10ml*6支*2盒"  
+                     },  
+                      {
+                 	    "id":"1011",
+                 	    "pic":"../imgs/sort_list11.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"FOREO斐珞尔 露娜mini一代硅胶美容仪电动洁面仪毛孔清洁器洗脸刷"  
+                     },
+                     {
+                 	    "id":"1012",
+                 	    "pic":"../imgs/sort_list12.jpg",
+                 	    "price1":"￥890.00",
+                 	    "price2":"￥1620.00",
+                 	    "detail":"法国Biotherm/碧欧泉男士细致3件套（细致洁面膏125ml+细致爽肤水20"  
+                     },  
+                      {
+                 	    "id":"1013",
+                 	    "pic":"../imgs/sort_list13.jpg",
+                 	    "price1":"￥880.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本ShuUemura植村秀琥珀臻萃洁颜油450ml 卸妆油 "  
+                     },
+                     {
+                 	    "id":"1014",
+                 	    "pic":"../imgs/sort_list14.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },  
+                      {
+                 	    "id":"1015",
+                 	    "pic":"../imgs/sort_list15.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },
+                 {
+                 	    "id":"1001",
+                 	    "pic":"../imgs/sort_list1.jpg",
+                 	    "price1":"￥1980.00",
+                 	    "price2":"￥2800.00",
+                 	    "detail":"La Villosa冰川活细胞精华组(瑞士原装进口)"  
+                       },
+                     {
+                 	    "id":"1002",
+                 	    "pic":"../imgs/sort_list2.jpg",
+                 	    "price1":"￥1680.00",
+                 	    "price2":"￥2580.00",
+                 	    "detail":"REFA CARAT 铂金微电流滚轮美容仪 按摩V脸瘦脸"  
+                     },  
+                     {
+                 	    "id":"1003",
+                 	    "pic":"../imgs/sort_list3.jpg",
+                 	    "price1":"￥1580.00",
+                 	    "price2":"￥2020.00",
+                 	    "detail":"LaVillosa活细胞眼部精华组(瑞士原装进口)"  
+                     }, 
+                      {
+                 	    "id":"1004",
+                 	    "pic":"../imgs/sort_list4.jpg",
+                 	    "price1":"￥1480.00",
+                 	    "price2":"￥2820.00",
+                 	    "detail":"FOREO LUNA露娜标准版一代粉色（中性肌肤）"  
+                     },
+                     {
+                 	    "id":"1005",
+                 	    "pic":"../imgs/sort_list5.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1998.00",
+                 	    "detail":"whoo 后秘贴焕然新生精华系列礼盒五件套"  
+                     },
+                     {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list6.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"SK-II神仙水护肤精华露230ml"  
+                     }, 
+                      {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list7.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"DrSebagh赛贝格微整抗老精华奢华订制组（原装进口）"  
+                     },
+                      {
+                 	    "id":"1008",
+                 	    "pic":"../imgs/sort_list8.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"京城之霜 全新白皙臻亮安瓶组"  
+                     }, 
+                      {
+                 	    "id":"1009",
+                 	    "pic":"../imgs/sort_list9.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本丸上胶原蛋白精华线球奢享套组"  
+                     },
+                      {
+                 	    "id":"1010",
+                 	    "pic":"../imgs/sort_list10.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"诗蒂兰 涂抹式水光肌原液套组 原液10ml*6支*2盒"  
+                     },  
+                      {
+                 	    "id":"1011",
+                 	    "pic":"../imgs/sort_list11.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"FOREO斐珞尔 露娜mini一代硅胶美容仪电动洁面仪毛孔清洁器洗脸刷"  
+                     },
+                     {
+                 	    "id":"1012",
+                 	    "pic":"../imgs/sort_list12.jpg",
+                 	    "price1":"￥890.00",
+                 	    "price2":"￥1620.00",
+                 	    "detail":"法国Biotherm/碧欧泉男士细致3件套（细致洁面膏125ml+细致爽肤水20"  
+                     },  
+                      {
+                 	    "id":"1013",
+                 	    "pic":"../imgs/sort_list13.jpg",
+                 	    "price1":"￥880.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本ShuUemura植村秀琥珀臻萃洁颜油450ml 卸妆油 "  
+                     },
+                     {
+                 	    "id":"1014",
+                 	    "pic":"../imgs/sort_list14.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },  
+                      {
+                 	    "id":"1015",
+                 	    "pic":"../imgs/sort_list15.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },
+                 {
+                 	    "id":"1001",
+                 	    "pic":"../imgs/sort_list1.jpg",
+                 	    "price1":"￥1980.00",
+                 	    "price2":"￥2800.00",
+                 	    "detail":"La Villosa冰川活细胞精华组(瑞士原装进口)"  
+                       },
+                     {
+                 	    "id":"1002",
+                 	    "pic":"../imgs/sort_list2.jpg",
+                 	    "price1":"￥1680.00",
+                 	    "price2":"￥2580.00",
+                 	    "detail":"REFA CARAT 铂金微电流滚轮美容仪 按摩V脸瘦脸"  
+                     },  
+                     {
+                 	    "id":"1003",
+                 	    "pic":"../imgs/sort_list3.jpg",
+                 	    "price1":"￥1580.00",
+                 	    "price2":"￥2020.00",
+                 	    "detail":"LaVillosa活细胞眼部精华组(瑞士原装进口)"  
+                     }, 
+                      {
+                 	    "id":"1004",
+                 	    "pic":"../imgs/sort_list4.jpg",
+                 	    "price1":"￥1480.00",
+                 	    "price2":"￥2820.00",
+                 	    "detail":"FOREO LUNA露娜标准版一代粉色（中性肌肤）"  
+                     },
+                     {
+                 	    "id":"1005",
+                 	    "pic":"../imgs/sort_list5.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1998.00",
+                 	    "detail":"whoo 后秘贴焕然新生精华系列礼盒五件套"  
+                     },
+                     {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list6.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"SK-II神仙水护肤精华露230ml"  
+                     }, 
+                      {
+                 	    "id":"1006",
+                 	    "pic":"../imgs/sort_list7.jpg",
+                 	    "price1":"￥1280.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"DrSebagh赛贝格微整抗老精华奢华订制组（原装进口）"  
+                     },
+                      {
+                 	    "id":"1008",
+                 	    "pic":"../imgs/sort_list8.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1580.00",
+                 	    "detail":"京城之霜 全新白皙臻亮安瓶组"  
+                     }, 
+                      {
+                 	    "id":"1009",
+                 	    "pic":"../imgs/sort_list9.jpg",
+                 	    "price1":"￥980.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本丸上胶原蛋白精华线球奢享套组"  
+                     },
+                      {
+                 	    "id":"1010",
+                 	    "pic":"../imgs/sort_list10.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"诗蒂兰 涂抹式水光肌原液套组 原液10ml*6支*2盒"  
+                     },  
+                      {
+                 	    "id":"1011",
+                 	    "pic":"../imgs/sort_list11.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"FOREO斐珞尔 露娜mini一代硅胶美容仪电动洁面仪毛孔清洁器洗脸刷"  
+                     },
+                     {
+                 	    "id":"1012",
+                 	    "pic":"../imgs/sort_list12.jpg",
+                 	    "price1":"￥890.00",
+                 	    "price2":"￥1620.00",
+                 	    "detail":"法国Biotherm/碧欧泉男士细致3件套（细致洁面膏125ml+细致爽肤水20"  
+                     },  
+                      {
+                 	    "id":"1013",
+                 	    "pic":"../imgs/sort_list13.jpg",
+                 	    "price1":"￥880.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本ShuUemura植村秀琥珀臻萃洁颜油450ml 卸妆油 "  
+                     },
+                     {
+                 	    "id":"1014",
+                 	    "pic":"../imgs/sort_list14.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },  
+                      {
+                 	    "id":"1015",
+                 	    "pic":"../imgs/sort_list15.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },
+                     {
+                 	    "id":"1011",
+                 	    "pic":"../imgs/sort_list11.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"FOREO斐珞尔 露娜mini一代硅胶美容仪电动洁面仪毛孔清洁器洗脸刷"  
+                     },
+                     {
+                 	    "id":"1012",
+                 	    "pic":"../imgs/sort_list12.jpg",
+                 	    "price1":"￥890.00",
+                 	    "price2":"￥1620.00",
+                 	    "detail":"法国Biotherm/碧欧泉男士细致3件套（细致洁面膏125ml+细致爽肤水20"  
+                     },  
+                      {
+                 	    "id":"1013",
+                 	    "pic":"../imgs/sort_list13.jpg",
+                 	    "price1":"￥880.00",
+                 	    "price2":"￥1280.00",
+                 	    "detail":"日本ShuUemura植村秀琥珀臻萃洁颜油450ml 卸妆油 "  
+                     },
+                     {
+                 	    "id":"1014",
+                 	    "pic":"../imgs/sort_list14.jpg",
+                 	    "price1":"￥998.00",
+                 	    "price2":"￥1880.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     },  
+                      {
+                 	    "id":"1015",
+                 	    "pic":"../imgs/sort_list15.jpg",
+                 	    "price1":"￥899.00",
+                 	    "price2":"￥1499.00",
+                 	    "detail":"日本ShuUemura植村秀绿茶新肌洁颜油450ml 卸妆液"  
+                     }    
+
+              
+               
+
+]
