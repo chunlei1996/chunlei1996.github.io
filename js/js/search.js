@@ -1,4 +1,4 @@
- /*搜索框部分*/
+ /*搜索框部分js*/
  define(["jquery"],function(){
  	  var searchBox={
         	  insearch:$('.in_search'),
@@ -7,7 +7,7 @@
         	  init:function(){
                  this.searchInput();
                  this.searchClick();
-                //this.pressKey();
+               
 
         	  },
         	  //文本框输入时获取数据
@@ -43,18 +43,18 @@
                this.num = 0;
                $(document).keydown(function(e){
                   var con=$('.search_words').eq(that.num).html();
-                 //e.preventDefault();
+                 
                   //点击下键切换
                    if($('.search_words').length>0 && e.keyCode==40){
                       $('.search_words').removeClass('active');
                       $('.search_words').eq(that.num).addClass('active');
                      that.insearch.val(con);
-                     //console.log(that.num);
+                    
                       that.num++;
                       that.num%=$('.search_words').length;
                           
                     }
-                     //点击上键切换
+                    
                       if($('.search_words').length>0 && e.keyCode==38){
                       $('.search_words').removeClass('active');
                       $('.search_words').eq(that.num).addClass('active');
@@ -68,7 +68,7 @@
                     }
                    if(e.ctrlKey&&e.keyCode==13){
                      
-                      // console.log(that.insearch.val());
+                      
                        window.location='http://www.baidu.com/s?wd='+ that.insearch.val();
                    }
                });
@@ -102,5 +102,3 @@
     };
         searchBox.init();
 }); 
-
-//http://www.happigo.com/?act=search&op=index&keyword=%E8%A1%A5%E6%B0%B4

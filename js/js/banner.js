@@ -1,3 +1,6 @@
+/*!
+	轮播图js
+*/
 define(function(){
 		var banner = {
 						imgs: $('.pic img'),
@@ -25,10 +28,11 @@ define(function(){
                                  clearInterval(_this.timer);
                                  _this.index=$(this).index()-1;
 			                     _this.imgSwitch();
-			                  
+			                   
 			                   // console.log(_this);
 							}); 
 						},
+	
 						//图片切换小圆点跟随
 						imgSwitch:function(){
 							       this.index++;

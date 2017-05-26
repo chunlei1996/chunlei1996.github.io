@@ -1,3 +1,4 @@
+/*!购物车页js*/
 require(['../config'],function(){
 
 	//加载需要用到的模块
@@ -5,8 +6,8 @@ require(['../config'],function(){
          layer.config({
              path:"js/plug/layer/"
           });
-      $('.append_head').load('../../common.html .header');
-          $('.append_foot').load('../../common.html .footer');
+       $('.append_head').load('../../common.html .header');
+       $('.append_foot').load('../../common.html .footer');
 	  var cart={
       	   cart:{},
       	   data:{},
@@ -98,7 +99,7 @@ require(['../config'],function(){
                 layer.confirm('确定删除吗',function(){
                 	layer.closeAll();
                 	$(that).parents('.cart-goods-item').remove();
-                	var id=$(that).parents('.cart-goods-item').data(id);
+                	var id=$(that).parents('.cart-goods-item').data('id');
                 	//在页面上删除
                 	delete _this.cart[id];
                    //在cookie中删除
@@ -125,7 +126,7 @@ require(['../config'],function(){
                      //从cookie中删除
                      var id=$(this).parents('.cart-goods-item').data('id');
                     delete _this.cart[id];
-                    _this.setCookie();
+                     _this.setCookie();
                     _this.handleInfo();
                     $('input.select-all-btn').prop('checked',false);   
 
@@ -190,7 +191,7 @@ require(['../config'],function(){
 		setCookie: function(){
 			$.cookie('tm-cart',JSON.stringify(this.cart),{expires: 365,path: '/'});
 		}
-      };  
+ };  
       cart.init();
 	});
 

@@ -1,3 +1,6 @@
+/*!
+ 详情页js
+*/
 require(['../config'],function(){
 
 	//加载需要用到的模块
@@ -24,7 +27,7 @@ require(['../config'],function(){
 		           		//边界处理
 				l = l < 0 ? 0 : (l > 180? 180 : l);
 				t = t < 0 ? 0 : (t > 180? 180 : t);
-                console.log(l,t);
+                //console.log(l,t);
 				//更改滤镜位置
 			filter.css({
 			            "left":l,
@@ -32,7 +35,7 @@ require(['../config'],function(){
 		             });
 				//更改大图的位置
 			
-				largeImg.css({
+			largeImg.css({
 					      "left":-l*1.85,
 					      "top":-t*1.85
 			              });
@@ -184,7 +187,6 @@ require(['../config'],function(){
 					//读取cookie  做兼容
 					var cart = $.cookie('tm-cart') || '{}';
 					cart = JSON.parse(cart);
-					
 					//判断是否已经存在当前商品
 					if(!cart[id]){
 						//不存在

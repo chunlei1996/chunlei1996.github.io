@@ -149,7 +149,8 @@ require(['../config'],function(){
 				}else{
 					alert('注册成功');
 					$.cookie('username',unameInput.val(),{expires: 365,path: '/'});
-                    console.log( $.cookie('username'));
+					$.cookie('userpsw',pswInput.val(),{expires: 365,path: '/'});
+                    //console.log( $.cookie('username'));
 				}
 			}
                   

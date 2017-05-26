@@ -16,7 +16,7 @@ require(['../config'],function(){
          var verify=('000'+random.toString(16)).substr(-4);
 		 change_v.click(function(){
             verifyCon.html(verify);
-       });
+           });
        inverify.blur(function(){
            var v=inverify.val();
            var reg=new RegExp(verify,'i');
@@ -33,12 +33,27 @@ require(['../config'],function(){
 			var psw = $('.psw').val();
 			//判断是否输入为空
 			if(account=='' || psw == ''){
+				console.log();
 				alert('用户名或者密码不能为空');
 				return;
-			}
+			  }
+		   else  if(account==$.cookie('username') && psw==$.cookie('userpsw'))
+			  {
+					alert('登录成功');
+					var userinfo = {
+								account: account,
+								login_status: 1
+							};
+					$.cookie('userinfo',JSON.stringify(userinfo),{expires: 365,path: '/'});
+					location.href = '../../index.html';
+			   }
+			   else{alert('登录失败')};
+			
+           
+		});
 
 			//使用ajax进行登录
-			$.ajax({
+			/*$.ajax({
 				type: 'post',
 				url: 'http://10.9.151.199/PC-Project-Admin/login.php',
 				data: {
@@ -51,13 +66,13 @@ require(['../config'],function(){
 						alert('登录成功');
 
 						//判断是否需要自动登录
-						//if( $('#remember').prop('checked') ){
+						
 							var userinfo = {
 								account: account,
 								login_status: 1
 							};
 							$.cookie('userinfo',JSON.stringify(userinfo),{expires: 365,path: '/'});
-						//}
+						
 
 						//大部分会跳转到首页
 						location.href = '../../index.html';
@@ -65,8 +80,8 @@ require(['../config'],function(){
 						alert('登录失败');
 					}
 			    }
-		  });
-         });
+		  });*/
+         
 	});
   
 });

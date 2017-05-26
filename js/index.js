@@ -3,12 +3,14 @@
 */
 
 require(['config'],function(){
-	require(['jquery',"template","banner","jquery.cookie","search"],function($,tem,banner,jc,search){
-		var res;
+	require(['jquery',"banner","jquery.cookie","search",'lazyload'],function($,banner,jc,search,lazyload){
+		
         //注册小提示
         $('.reg_close').click(function(){
         	$(this).parent().hide();
         })
+   
+       
        /*用户登录部分*/   
        //读取cookie，判断用户是否登录，填充信息
 		var userinfo = $.cookie('userinfo');
@@ -35,8 +37,20 @@ require(['config'],function(){
 			location.href = "login.html";
 		});
         /*用户登录部分结束*/
-       
-
+         
+         //图片懒加载，当图片出现在可视区域时加载
+          function lazyImg(){
+            
+			 $('img.lazy').lazyload({
+					effect: 'fadeIn',//显示的效果  
+					data_attribute: 'original', //规定真实图片的url
+					threshold:0, //声明图片距离屏幕底端多少距离时开始加载图片
+					failure_limit:100, //容差
+					load: function(){ //图片加载完成做的事情
+						$(this).removeAttr('data-original');
+					}
+			 });     
+          }
 		/*今日直播*/
 		var todayLive={
 				lc_list:$('.lc_list'),
@@ -55,19 +69,23 @@ require(['config'],function(){
 			               
 			               for(var j=0;j<2;j++){
 			               	var c=''; 
-			               	for (var i = 0; i < data[0].length; i++) {
-			                 	 c +=`
-					                 <li>
-					                    <div class="live_pic"><img src="${data[j][i].pic}"/></div>
-					                    <p class="lp1"><a href="###">${data[j][i].title}</a></p>
-					                    <p class="lp2"><a href="###">${data[j][i].detail}</a></p>
-					                    <p class="lp3"><span class="l_sp1"><i>￥</i>${data[j][i].price1}</span><span class="l_sp2">￥${data[j][i].price2}</span></p>
-					                </li>
-					               	    `;
-			                    
-			                   }
-			                 _this.lc_list.eq(j).html(c);   
+				               	for (var i = 0; i < data[0].length; i++) {
+				                 	 c +=`
+						                 <li>
+						                    <div class="live_pic">
+						                    	<img class="lazy" data-original="${data[j][i].pic}" src="../imgs/default_goods_image_240.gif" width="180" height="180"/>
+						                    </div>
+						                    <p class="lp1"><a href="###">${data[j][i].title}</a></p>
+						                    <p class="lp2"><a href="###">${data[j][i].detail}</a></p>
+						                    <p class="lp3"><span class="l_sp1"><i>￥</i>${data[j][i].price1}</span><span class="l_sp2">￥${data[j][i].price2}</span></p>
+						                </li>
+						               	    `;
+				                    
+				                   }
+			                   _this.lc_list.eq(j).html(c);   
 			                }
+                             lazyImg();
+
 			       	     }
 			          });
 			       },
@@ -131,7 +149,11 @@ require(['config'],function(){
 				               	for (var k = 0; k < data[0].length; k++) {
 				                 	 con +=`
 						                   <li>
-								              <div class="f1_pic"><a href="javascript:;"><img src="${data[z][k].pic}"/></a></div>
+								              <div class="f1_pic">
+								              	<a href="javascript:;">
+								              		<img  class="lazy" src="../imgs/default_goods_image_240.gif" data-original="${data[z][k].pic}"  />
+								              	</a>
+								              </div>
 								              <div class="f1_time">距结束<span class="endTime"></span></div>
 								              <div class="f1_intr">
 								                <p class="lp1"><a href="###">${data[z][k].title}</a></p>
@@ -144,6 +166,7 @@ require(['config'],function(){
 				                   }
 				                   _this.f1_list.eq(z).html(con);   
 				            }
+				            lazyImg();
 		       	       }
 		           });
 		        },
@@ -198,8 +221,8 @@ require(['config'],function(){
 			             that.catTime();
 			            var res= that.catTime();
 			            $(".endTime").html(res);
-			            console.log(res);
-			             //console.log(that.catTime());
+			            //console.log(res);
+			            
 			         
 			         },1000);
 		          
@@ -236,7 +259,9 @@ require(['config'],function(){
 				               	for (var i = 0; i < data[0].length; i++) {
 				                 	 c +=`
 						                 <li class="common_l">
-						                    <div class="f2_pic"><img src="${data[j][i].pic}"/></div>
+						                    <div class="f2_pic">
+						                    	<img class="lazy" src="../imgs/default_goods_image_240.gif" data-original="${data[j][i].pic}"/>
+						                    </div>
 						                    <p class="lp1"><a href="###">${data[j][i].title}</a></p>
 						                    <p class="lp2"><a href="###">${data[j][i].detail}</a></p>
 						                    <p class="lp3"><span class="l_sp1"><i>￥</i>${data[j][i].price1}</span><span class="l_sp2">￥${data[j][i].price2}</span></p>
@@ -246,6 +271,7 @@ require(['config'],function(){
 				                   }
 				                   $('.f2_list').eq(j).html(c); 
 				                }
+				                lazyImg();
 				       	     }
 				          });
 					},
@@ -291,7 +317,7 @@ require(['config'],function(){
 						               	for (var i = 0; i < data[0].length; i++) {
 						                 	c +=`
 								                 <li class="common_l">
-								                    <div class="f2_pic"><img src="${data[j][i].pic}"/></div>
+								                    <div class="f2_pic"><img class="lazy" src="../imgs/default_goods_image_240.gif" data-original="${data[j][i].pic}"/></div>
 								                    <p class="lp1"><a href="###">${data[j][i].title}</a></p>
 								                    <p class="lp2"><a href="###">${data[j][i].detail}</a></p>
 								                    <p class="lp3"><span class="l_sp1"><i>￥</i>${data[j][i].price1}</span><span class="l_sp2">￥${data[j][i].price2}</span></p>
@@ -304,6 +330,7 @@ require(['config'],function(){
 						            }
 					           
 					       		 }
+					       		 lazyImg();
 					       	}
 					 });
 	          	},
@@ -334,7 +361,9 @@ require(['config'],function(){
 				handle:function(){
 					var _this=this;
 	                 $(window).scroll(function(){
-							var scrollT = $('body').scrollTop();
+							//var scrollT = $('body').scrollTop();
+							var scrollT=document.body.scrollTop;
+
 							if(scrollT > 1000-_this.ch/2){
 								_this.floorNav.fadeIn();
 							}else{
@@ -385,7 +414,8 @@ require(['config'],function(){
            	  	$('.searchfix').slideUp(500);
            	  }
            });
-              
+           
+
        });
       
 	  

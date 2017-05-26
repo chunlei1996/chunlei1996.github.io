@@ -83,7 +83,7 @@
     }
   .live_pic{width:180px;height:180px;overflow:hidden;}
   li:hover{border: 3px solid #c4193f;
-     img{transform:scale(1.2);  
+     img{transform:scale(1.2);  border:none;
         transition: all 0.3s ease-in 0s;
      }
     }
@@ -130,10 +130,10 @@
 
 }
 .f1_con{
-  .f1_list{float:left;display:block;height:320px;}
-  width:1010px;float:left;margin-top:20px;height:320px;overflow:hidden;
+  .f1_list{float:left;display:block;height:330px;}
+  width:1010px;float:left;margin-top:20px;height:330px;overflow:hidden;
   li{width:192px;margin-right:10px;float:left;
-    .f1_pic{width:192px;height:192px;position:relative;
+    .f1_pic{width:192px;height:192px;position:relative;margin-top:5px;
        &:hover img{opacity:0.5;}
       }
     img{width:192px;}

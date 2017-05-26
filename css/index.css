@@ -216,6 +216,7 @@ b {
 
 .live_con li:hover img {
   transform: scale(1.2);
+  border: none;
   transition: all 0.3s ease-in 0s;
 }
 
@@ -327,14 +328,14 @@ b {
   width: 1010px;
   float: left;
   margin-top: 20px;
-  height: 320px;
+  height: 330px;
   overflow: hidden;
 }
 
 .f1_con .f1_list {
   float: left;
   display: block;
-  height: 320px;
+  height: 330px;
 }
 
 .f1_con li {
@@ -347,6 +348,7 @@ b {
   width: 192px;
   height: 192px;
   position: relative;
+  margin-top: 5px;
 }
 
 .f1_con li .f1_pic:hover img {
