@@ -203,7 +203,7 @@ require(['config'],function(){
 		        },
 		        catTime:function(){
                    var now=new Date();
-                   var end=new Date('2017/6/5 00:00:00');
+                   var end=new Date('2017/10/1 00:00:00');
                    var num=end-now;
                    var day=parseInt(num/1000/60/60/24);
                    var h=parseInt(num/1000/60/60%24);
